@@ -15,8 +15,10 @@ A basic HTTPS hello world app written in express:
     app.get('/', function(req, res) {
         res.send('hello world')
     })
+    
     selfSignedHttps = require('self-signed-https')
     selfSignedHttps(app).listen(3000, '0.0.0.0')
+    console.log('Visit https://localhost:3000 in your web browser')
 
 # License
 
