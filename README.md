@@ -24,7 +24,7 @@ A basic HTTPS hello world app written in express:
 
 MIT
 
-# Credits
+## Credits
 
 Author: [Geza Kovacs](http://github.com/gkovacs)
 
