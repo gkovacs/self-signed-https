@@ -1,6 +1,6 @@
 {
   "name": "self-signed-https",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Creates a self-signed https server",
   "main": "self-signed-https.js",
   "scripts": {
