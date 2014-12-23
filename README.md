@@ -2,11 +2,11 @@
 
 Creates a self-signed https server
 
-# Installation
+## Installation
 
     npm install self-signed-https
 
-# Usage
+## Usage
 
 A basic HTTPS hello world app written in express:
 
@@ -20,11 +20,11 @@ A basic HTTPS hello world app written in express:
     selfSignedHttps(app).listen(3000, '0.0.0.0')
     console.log('Visit https://localhost:3000 in your web browser')
 
-# License
+## License
 
 MIT
 
 # Credits
 
-[Geza Kovacs](http://github.com/gkovacs)
+Author: [Geza Kovacs](http://github.com/gkovacs)
 
