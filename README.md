@@ -8,19 +8,25 @@ Creates a self-signed https server
 
 ## Usage
 
-A basic HTTPS hello world app written in express:
+A basic HTTPS hello world app written in express (paste into app.js):
 
 ```javascript
 var express = require('express')
+var selfSignedHttps = require('self-signed-https')
+
 var app = express()
 app.get('/', function(req, res) {
     res.send('hello world')
 })
 
-var selfSignedHttps = require('self-signed-https')
-selfSignedHttps(app).listen(3000, '0.0.0.0')
-console.log('Visit https://localhost:3000 in your web browser')
+selfSignedHttps(app).listen(443, '0.0.0.0')
 ```
+
+You will need to run as root as it's listening on port 443 (change to a higher port like 3000 if you want to run without sudo):
+
+    sudo node app.js
+
+Then, you can visit https://localhost in your web browser
 
 ## License
 
